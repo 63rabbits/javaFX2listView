@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javaFX2listView.ListViewController">
+  <children>
+    <VBox layoutX="20.0" layoutY="20.0" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+      <children>
+        <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+          <children>
+            <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+              <children>
+                <ListView fx:id="lsv01" onMouseClicked="#lsv01DoubleClick" prefHeight="200.0" prefWidth="200.0" />
+                <VBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+                  <children>
+                    <Button fx:id="btn01" mnemonicParsing="false" onAction="#btn01OnAction" text="&gt;" />
+                    <Button fx:id="btn02" mnemonicParsing="false" onAction="#btn02OnAction" text="&lt;" />
+                  </children>
+                </VBox>
+                <ListView fx:id="lsv02" onMouseClicked="#lsv02DoubleClick" prefHeight="200.0" prefWidth="200.0" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <Label text="- To select multiple row, use SHIFT or CTRL keys." />
+            <Label text="- To move information directly, double-click the row." />
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
